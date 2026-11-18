@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="wrap">
+        <!-- 1. HERO -->
+        <header class="hero" id="beranda">
+            <nav>
+                <span class="pill"><i class="dot"></i>Tersedia untuk proyek baru</span>
+                <div class="links">
+                    <a href="#karya">Karya <small>[2]</small></a>
+                    <a href="#layanan">Layanan <small>[4]</small></a>
+                    <a href="#pengalaman">Pengalaman <small>[1]</small></a>
+                    <a href="#kontak">Kontak</a>
+                </div>
+                <a class="btn dark" href="#kontak">Ayo Ngobrol <span class="arr">↗</span></a>
+            </nav>
+
+            <h1 class="name"><span class="o">Ahmad Dicha</span><span>Hidayatullah</span></h1>
+
+
+
+            <div class="portrait" aria-hidden="true">
+                <img src="Profile.png" alt="Dicha">
+            </div>
+
+            <div class="intro">
+                <h2>Front-End Developer</h2>
+                <p>
+                    Membangun tampilan web yang jelas, responsif, dan nyaman dipakai.
+                </p>
+                <a class="btn dark" href="#karya">Lihat karya <span class="arr">↗</span></a>
+            </div>
+
+            <div class="soc">
+                <a class="pill" href="https://github.com/Karlsefni262" target="_blank"
+                    rel="noopener"><b>&lt;/&gt;</b>GitHub</a>
+                <a class="pill" href="https://www.instagram.com/karlstzn/" target="_blank"
+                    rel="noopener"><b>◎</b>Instagram</a>
+                <a class="pill" href="https://www.linkedin.com/in/ahmad-dicha-hidayatullah-a6a226411/" target="_blank"
+                    rel="noopener"><b>in</b>LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- 2. SELECTED WORK -->
+        <section class="card-sec work-sec" id="karya">
+            <p class="ghost" aria-hidden="true">Portofolio</p>
+            <h2 class="title">/Karya Pilihan</h2>
+            <div class="bar">
+                <div class="tabs" role="tablist">
+                    <button class="on" data-f="all">Semua</button>
+                    <button data-f="real">Proyek Nyata</button>
+                    <button data-f="explore">Eksplorasi</button>
+                </div>
+                <a class="pill outline" href="#kontak">Lihat Semua <span class="arr">↗</span></a>
+            </div>
+            <div class="works">
+                <a class="work" data-cat="real" href="" target="_blank" rel="noopener">
+                    <div class="shot a has-img">
+                        <span class="tag">Proyek Nyata</span>
+                        <img src="getskill.png" alt="Tampilan halaman awal getskill.id" loading="lazy" />
+                    </div>
+                    <h3><em>getskill.id</em> – Tampilan Front-End Website</h3>
+                    <div class="chips">
+                        <span>Front-End</span><span>PT Hummatech</span>
+                    </div>
+                </a>
+                <a class="work" data-cat="real" href="" target="_blank" rel="noopener">
+                    <div class="shot b has-img">
+                        <span class="tag">Proyek Nyata</span>
+                        <img src="mischoll.png" alt="Tampilan halaman awal mischoll.id" loading="lazy" />
+                    </div>
+                    <h3><em>mischoll.id</em> – Tampilan Front-End Website</h3>
+                    <div class="chips">
+                        <span>Front-End</span><span>PT Hummatech</span>
+                    </div>
+                </a>
+            </div>
+            <p class="empty" hidden>Belum ada karya eksplorasi.</p>
+        </section>
+
+        <!-- 3. SERVICE -->
+        <section class="sec" id="layanan">
+            <h2 class="title left">/Layanan</h2>
+            <div class="svc">
+                <details name="svc" open>
+                    <summary>Web Front-End</summary>
+                    <p>
+                        Mengubah desain menjadi halaman web dengan HTML, CSS, dan
+                        JavaScript yang rapi.
+                    </p>
+                    <div class="pv"><img src="front-end.png" alt="" /></div>
+                </details>
+                <details name="svc">
+                    <summary>Responsive Design</summary>
+                    <p>
+                        Memastikan tampilan tetap nyaman di ponsel, tablet, dan desktop.
+                    </p>
+                     <div class="pv"><img src="responsive.png" alt="" /></div>
+                </details>
+                <details name="svc">
+                    <summary>Perbaikan UI</summary>
+                    <p>
+                        Merapikan tata letak, tipografi, dan komponen pada tampilan yang
+                        sudah ada.
+                    </p>
+                    <div class="pv"><img src="ui.png" alt="" /></div>
+                </details>
+                <details name="svc">
+                    <summary>Animasi &amp; Interaksi</summary>
+                    <p>
+                        Menambahkan gerak sederhana yang membantu pengguna memahami
+                        halaman.
+                    </p>
+                    <div class="pv">Motion</div>
+                </details>
+            </div>
+        </section>
+
+        <!-- 4. EXPERIENCE -->
+        <section class="exp" id="pengalaman">
+            <p class="ghost" aria-hidden="true">Pengalaman</p>
+            <header>
+                <h2>/Pengalaman</h2>
+                <span>Magang di industri</span>
+            </header>
+            <div class="row" data-pv="a">
+                <div>
+                    <b>PT Hummatech</b><small>Front-End Developer (Magang)</small>
+                </div>
+                <small>November 2025 – April 2026</small>
+            </div>
+            <div class="row">
+                <div><b>Joki Tugas Pembuatan Website</b><small>Full Stack Developer</small></div>
+                <small>2025 – Sekarang</small>
+            </div>
+            <div class="float" aria-hidden="true"><img src="hummatech.png" alt="" /></div>
+        </section>
+
+        <!-- 5. CONTACT -->
+        <section class="cta" id="kontak">
+            <span class="pill"><i class="dot"></i>Tersedia untuk proyek baru</span>
+            <h2>Punya proyek di pikiran?</h2>
+            <p>
+                Mari kerjakan bersama sesuatu yang jelas dan berdampak. Ayo wujudkan
+                idemu menjadi tampilan yang dimengerti semua orang.
+            </p>
+            <a class="btn dark ring" href="mailto:ahmaddikapro123@gmail.com">Hubungi Saya <span class="arr">↗</span></a>
+            <div class="links2">
+                <a class="pill dark" href="#beranda"><i class="av">NK</i>Dicha</a>
+                <a class="pill" href="https://github.com/karlsefni262" target="_blank"
+                    rel="noopener"><b>&lt;/&gt;</b>GitHub</a>
+                <a class="pill" href="https://instagram.com/karlstzn" target="_blank"
+                    rel="noopener"><b>◎</b>Instagram</a>
+                <a class="pill" href="https://www.linkedin.com/in/ahmad-dicha-hidayatullah-a6a226411/" target="_blank"
+                    rel="noopener"><b>in</b>LinkedIn</a>
+            </div>
+        </section>
+        <footer>© 2026 Ahmad Dicha Hidayatullah</footer>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
