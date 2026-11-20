@@ -240,6 +240,96 @@ nav small {
     transition: filter .5s ease;
 }
 
+/* Keahlian: kartu bertab */
+.skills {
+    position: relative;
+    background: var(--card);
+    padding: 5rem var(--px) 4rem;
+}
+
+.skills .title {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.sk-group {
+    margin: 2.4rem 0 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--muted);
+}
+
+.sk-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+}
+
+.sk-card {
+    position: relative;
+    background: var(--bd);
+    border-radius: 20px;
+    padding: 4px;
+    box-shadow: 0 16px 28px -12px rgba(0, 0, 0, .35);
+    transition: transform .25s;
+}
+
+.sk-card:hover {
+    transform: translateY(-5px);
+}
+
+/* gambar: gradasi warna dengan kilau diagonal */
+.sk-media {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1.86;
+    border-radius: 16px;
+    overflow: hidden;
+    background:
+        linear-gradient(115deg, transparent 26%, rgba(255, 255, 255, .38) 40%, transparent 54%),
+        linear-gradient(160deg, var(--c1), var(--c2));
+}
+
+.sk-media img {
+    width: 32%;
+    max-height: 48%;
+    margin-top: .9rem;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 14px rgba(0, 0, 0, .35));
+    transition: transform .3s;
+}
+
+.sk-card:hover .sk-media img {
+    transform: scale(1.1);
+}
+
+/* tab nama di pojok kiri atas */
+.sk-tab {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    z-index: 1;
+    padding: .6rem 1.1rem .8rem .95rem;
+    background: var(--bd);
+    color: var(--tx);
+    font: 500 .78rem/1 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border-radius: 16px 0 18px 0;
+}
+
+/* lengkungan masuk di sisi kanan tab */
+.sk-tab::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle at 100% 100%, transparent 17.5px, var(--bd) 18px);
+}
+
 @media (min-width: 861px) {
     .portrait img {
         filter: grayscale(1);
@@ -826,6 +916,19 @@ footer {
 
     .links2 {
         justify-content: center;
+    }
+        .skills {
+        padding: 4rem var(--px) 3rem;
+    }
+
+    .sk-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .sk-tab {
+        font-size: .66rem;
+        padding: .5rem .8rem .7rem .7rem;
     }
 }
 
